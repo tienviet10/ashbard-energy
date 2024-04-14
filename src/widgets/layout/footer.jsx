@@ -78,19 +78,19 @@ Footer.defaultProps = {
       items: [
         {
           name: "About Us",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/LICENSE.md?ref=mtk",
+          path: "",
         },
         {
           name: "Services",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CONTRIBUTING.md?ref=mtk",
+          path: "",
         },
         {
           name: "Updates",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CHANGELOG.md?ref=mtk",
+          path: "",
         },
         {
           name: "Testimonials",
-          path: "https://creative-tim.com/contact-us?ref=mtk",
+          path: "",
         },
       ],
     },
@@ -99,19 +99,19 @@ Footer.defaultProps = {
       items: [
         {
           name: "About Us",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/LICENSE.md?ref=mtk",
+          path: "",
         },
         {
           name: "Services",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CONTRIBUTING.md?ref=mtk",
+          path: "",
         },
         {
           name: "Updates",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CHANGELOG.md?ref=mtk",
+          path: "",
         },
         {
           name: "Testimonials",
-          path: "https://creative-tim.com/contact-us?ref=mtk",
+          path: "",
         },
       ],
     },
@@ -120,11 +120,11 @@ Footer.defaultProps = {
       items: [
         {
           name: "info@ashbardplatinum.ca",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/LICENSE.md?ref=mtk",
+          path: "",
         },
         {
           name: "(403) 123 000",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CONTRIBUTING.md?ref=mtk",
+          path: "",
         },
         {
           name: "Calgary, Alberta, Canada",
