@@ -5,8 +5,8 @@ import React from "react";
 const OurServiceSection = ({ featuresData }) => {
   return (
     <>
-      <div className="mt-10 lg:mt-24">
-        <Typography className="mb-6 text-center text-7xl font-light">
+      <div className="mt-20 lg:mt-24">
+        <Typography className="mb-6 text-center text-4xl font-bold lg:text-7xl lg:font-light">
           Our Services
         </Typography>
         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:mt-24 lg:grid-cols-3">
@@ -21,7 +21,7 @@ const OurServiceSection = ({ featuresData }) => {
           ))}
         </div>
       </div>
-      <div className="mt-32 flex flex-wrap items-center">
+      <div className="mt-0 flex flex-wrap items-center lg:mt-20">
         <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
           <img
             alt="Card Image"
@@ -29,26 +29,80 @@ const OurServiceSection = ({ featuresData }) => {
             className="h-full w-full rounded-3xl"
           />
         </div>
-        <div className="mx-auto mt-8 w-full px-4 md:w-5/12">
+        <div className="mx-auto mt-8 flex w-full flex-col items-center px-4 md:w-5/12">
           <Typography
             variant="h3"
-            className="mb-3 text-4xl font-bold"
+            className="bg-red mb-5 text-center text-4xl font-normal"
             style={{ color: "#F6871F" }}
           >
             Oil and Gas
           </Typography>
-          <Typography className="mb-8 font-normal text-blue-gray-500">
-            Don't let your uses guess by attaching tooltips and popoves to any
-            element. Just make sure you enable them first via JavaScript.
-            <br />
-            <br />
-            The kit comes with three pre-built pages to help you get started
-            faster. You can change the text and images and you're good to go.
-            Just make sure you enable them first via JavaScript.
+          <Typography className="mb-8 text-center font-normal text-blue-gray-300">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra
+            orci sagittis eu volutpat odio facilisis mauris.
           </Typography>
-          <Button className="rounded-full bg-orange-700 px-10 py-4 text-xl font-light normal-case text-white hover:bg-orange-800">
-            Learn More
-          </Button>
+          <div className="flex">
+            <Button className="rounded-full bg-orange-700 px-10 py-4 text-xl font-light normal-case text-white hover:bg-orange-800">
+              Learn More
+            </Button>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-wrap items-center lg:mt-20">
+        <div className="mx-auto mt-8 flex w-full flex-col items-center px-4 md:w-5/12">
+          <Typography
+            variant="h3"
+            className="bg-red mb-5 text-center text-4xl font-normal"
+            style={{ color: "#F6871F" }}
+          >
+            Transportation & Logistics
+          </Typography>
+          <Typography className="mb-8 text-center font-normal text-blue-gray-300">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra
+            orci sagittis eu volutpat odio facilisis mauris.
+          </Typography>
+          <div className="flex">
+            <Button className="rounded-full bg-orange-700 px-10 py-4 text-xl font-light normal-case text-white hover:bg-orange-800">
+              Learn More
+            </Button>
+          </div>
+        </div>
+        <div className="order-first mx-auto mt-24 flex w-full justify-center px-4 md:order-none md:w-4/12 lg:mt-0">
+          <img
+            alt="Card Image"
+            src="/img/transportation-logistic.svg"
+            className="h-full w-full rounded-3xl"
+          />
+        </div>
+      </div>
+      <div className="flex flex-wrap items-center lg:mt-20">
+        <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
+          <img
+            alt="Card Image"
+            src="/img/consulting-service.svg"
+            className="h-full w-full rounded-3xl"
+          />
+        </div>
+        <div className="mx-auto mt-8 flex w-full flex-col items-center px-4 md:w-5/12">
+          <Typography
+            variant="h3"
+            className="bg-red mb-5 text-center text-4xl font-normal"
+            style={{ color: "#F6871F" }}
+          >
+            Consulting
+          </Typography>
+          <Typography className="mb-8 text-center font-normal text-blue-gray-300">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra
+            orci sagittis eu volutpat odio facilisis mauris.
+          </Typography>
+          <div className="flex">
+            <Button className="rounded-full bg-orange-700 px-10 py-4 text-xl font-light normal-case text-white hover:bg-orange-800">
+              Learn More
+            </Button>
+          </div>
         </div>
       </div>
     </>

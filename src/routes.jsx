@@ -9,22 +9,22 @@ export const routes = [
   {
     name: "ABOUT US",
     path: "/profile",
-    element: <Profile />,
+    element: <Home />,
   },
   {
     name: "SERVICES",
     path: "/profile",
-    element: <Profile />,
+    element: <Home />,
   },
   {
     name: "PROJECTS",
     path: "/profile",
-    element: <Profile />,
+    element: <Home />,
   },
   {
     name: "EVENTS",
     path: "/profile",
-    element: <Profile />,
+    element: <Home />,
   },
   {
     name: "CAREERS",
@@ -34,7 +34,7 @@ export const routes = [
   {
     name: "CONTACT US",
     path: "/profile",
-    element: <Profile />,
+    element: <Home />,
   },
   // {
   //   name: "Sign In",

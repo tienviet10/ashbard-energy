@@ -16,6 +16,8 @@ import { FeatureCard, TeamCard } from "@/widgets/cards";
 import { featuresData, teamData, contactData } from "@/data";
 import ExecSection from "./ExecSection";
 import OurServiceSection from "./OurServiceSection";
+import ClientTestimonials from "./ClientTestimonials";
+import PartnerSection from "./PartnerSection";
 
 export function Home() {
   return (
@@ -25,36 +27,46 @@ export function Home() {
         <div className="absolute top-0 h-full w-full bg-black/20 bg-cover bg-center" />
         <div className="max-w-8xl container relative mx-auto">
           <div className="flex flex-wrap items-center">
-            <div className="ml-auto mr-auto w-full px-4 text-left lg:w-8/12">
-              <Typography color="white" className="mb-6 text-8xl font-normal">
+            <div className="mx-auto w-full px-4 text-center lg:w-8/12 lg:text-left">
+              <Typography
+                color="white"
+                className="mb-6 text-5xl font-normal lg:text-8xl"
+              >
                 Oil and Gas
               </Typography>
               <Typography
                 variant="lead"
                 color="white"
-                className="text-2xl font-normal opacity-80"
+                className="text-xl font-normal opacity-80 lg:text-2xl"
               >
                 We offer focused expert and support services in the oil and gas
                 industry designed with cost-effective structures to adequately
-                facilitate clients’ operations for continuos performance.
+                facilitate clients’ operations for continuous performance.
               </Typography>
-              <Button className="mt-10 rounded-full bg-orange-700 px-10 py-6 text-xl font-normal normal-case text-white hover:bg-orange-800">
+              <Button className="mt-10 rounded-full bg-orange-700 px-10 py-3 text-lg font-normal normal-case text-white hover:bg-orange-800 lg:py-6 lg:text-xl">
                 Learn More
               </Button>
             </div>
           </div>
         </div>
       </div>
+
       <section className="bg-white px-4 pb-20 pt-4">
         <div className="container mx-auto">
-          {/* CEO section */}
           <ExecSection />
-          {/* Our Service */}
           <OurServiceSection featuresData={featuresData} />
         </div>
       </section>
 
-      <section className="px-4 pb-48 pt-20">
+      <section className="mt-10 bg-orange-700 py-20 text-white lg:mt-24">
+        <ClientTestimonials />
+      </section>
+
+      <section className="bg-white px-4 pb-20 pt-4">
+        <PartnerSection />
+      </section>
+
+      {/* <section className="px-4 pb-48 pt-20">
         <div className="container mx-auto">
           <PageTitle section="Our Team" heading="Here are our heroes">
             According to the National Oceanic and Atmospheric Administration,
@@ -143,8 +155,11 @@ export function Home() {
             </Button>
           </form>
         </div>
-      </section>
-      <div className="bg-white">
+      </section> */}
+      <div
+        className="mt-10 pb-10 lg:pb-20"
+        style={{ backgroundColor: "#2E294E" }}
+      >
         <Footer />
       </div>
     </>

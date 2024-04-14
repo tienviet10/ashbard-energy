@@ -3,10 +3,10 @@ import React from "react";
 
 const ExecSection = () => {
   return (
-    <div className="mx-auto mt-10 w-full flex-1 justify-center px-4 lg:mt-24">
-      <div className="mx-auto max-w-screen-xl px-4">
+    <div className="mx-auto mt-10 w-full flex-1 justify-center lg:mt-24">
+      <div className="mx-auto ">
         <Card
-          className="flex flex-col rounded-3xl border p-14 shadow-lg shadow-gray-500/10 lg:flex-row"
+          className="flex flex-col rounded-3xl border p-8 shadow-lg shadow-gray-500/10 lg:flex-row lg:p-14"
           style={{ backgroundColor: "#2E294E" }}
         >
           {/* Left Side */}
@@ -21,7 +21,7 @@ const ExecSection = () => {
               <div className="flex w-full flex-col items-center justify-center">
                 <Typography
                   variant="small"
-                  className="mt-10 text-center text-4xl font-normal lg:text-left"
+                  className="mt-3 text-center text-4xl font-normal lg:mt-10 lg:text-left"
                   color="white"
                 >
                   Engr. Adelaja
@@ -58,7 +58,6 @@ const ExecSection = () => {
               portal with about 30 service/product codes showcasing our
               capability and readiness to work and provide these services.
             </Typography>
-            {/* Add more text components as needed */}
           </div>
         </Card>
       </div>

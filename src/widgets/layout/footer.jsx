@@ -5,40 +5,19 @@ const year = new Date().getFullYear();
 
 export function Footer({ title, description, socials, menus, copyright }) {
   return (
-    <footer className="relative px-4 pt-8 pb-6">
+    <footer className="relative px-4 pb-6 pt-8">
       <div className="container mx-auto">
         <div className="flex flex-wrap pt-6 text-center lg:text-left">
-          <div className="w-full px-4 lg:w-6/12">
-            <Typography variant="h4" className="mb-4" color="blue-gray">
-              {title}
-            </Typography>
-            <Typography className="font-normal text-blue-gray-500 lg:w-2/5">
-              {description}
-            </Typography>
-            <div className="mx-auto mt-6 mb-8 flex justify-center gap-2 md:mb-0 lg:justify-start">
-              {socials.map(({ color, name, path }) => (
-                <a
-                  key={name}
-                  href={path}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <IconButton color="white" className="rounded-full shadow-none bg-transparent">
-                    <Typography color={color}>
-                      <i className={`fa-brands fa-${name}`} />
-                    </Typography>
-                  </IconButton>
-                </a>
-              ))}
-            </div>
+          <div className="flex w-full flex-row items-center justify-center px-4 lg:w-3/12 lg:justify-start">
+            <img src="/img/logo-footer.png" style={{ maxWidth: "405px" }} />
           </div>
-          <div className="mx-auto mt-12 grid w-max grid-cols-2 gap-24 lg:mt-0">
+          <div className="mx-auto mt-12 grid gap-8 lg:max-w-screen-lg lg:grid-cols-3 lg:gap-24 xl:max-w-screen-xl">
             {menus.map(({ name, items }) => (
-              <div key={name}>
+              <div key={name} className="text-center lg:text-left">
                 <Typography
                   variant="small"
-                  color="blue-gray"
                   className="mb-2 block font-medium uppercase"
+                  style={{ color: "#FF8600" }}
                 >
                   {name}
                 </Typography>
@@ -51,7 +30,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
                         target="_blank"
                         rel="noreferrer"
                         variant="small"
-                        className="mb-2 block font-normal text-blue-gray-500 hover:text-blue-gray-700"
+                        className="mb-2 block font-normal text-white hover:text-blue-gray-700"
                       >
                         {item.name}
                       </Typography>
@@ -60,17 +39,6 @@ export function Footer({ title, description, socials, menus, copyright }) {
                 </ul>
               </div>
             ))}
-          </div>
-        </div>
-        <hr className="my-6 border-gray-300" />
-        <div className="flex flex-wrap items-center justify-center md:justify-between">
-          <div className="mx-auto w-full px-4 text-center">
-            <Typography
-              variant="small"
-              className="font-normal text-blue-gray-500"
-            >
-              {copyright}
-            </Typography>
           </div>
         </div>
       </div>
@@ -106,38 +74,61 @@ Footer.defaultProps = {
   ],
   menus: [
     {
-      name: "useful links",
+      name: "IMPORTANT LINKS",
       items: [
-        { name: "About Us", path: "https://www.creative-tim.com/presentation" },
-        { name: "Blog", path: "https://www.creative-tim.com/blog" },
         {
-          name: "Github",
-          path: "https://www.github.com/creativetimofficial/material-tailwind?ref=mtk",
+          name: "About Us",
+          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/LICENSE.md?ref=mtk",
         },
         {
-          name: "Free Products",
-          path: "https://www.creative-tim.com/templates/free?ref=mtk",
+          name: "Services",
+          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CONTRIBUTING.md?ref=mtk",
+        },
+        {
+          name: "Updates",
+          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CHANGELOG.md?ref=mtk",
+        },
+        {
+          name: "Testimonials",
+          path: "https://creative-tim.com/contact-us?ref=mtk",
         },
       ],
     },
     {
-      name: "other resources",
+      name: "IMPORTANT LINKS",
       items: [
         {
-          name: "MIT License",
+          name: "About Us",
           path: "https://github.com/creativetimofficial/material-tailwind/blob/main/LICENSE.md?ref=mtk",
         },
         {
-          name: "Contribute",
+          name: "Services",
           path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CONTRIBUTING.md?ref=mtk",
         },
         {
-          name: "Change Log",
+          name: "Updates",
           path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CHANGELOG.md?ref=mtk",
         },
         {
-          name: "Contact Us",
+          name: "Testimonials",
           path: "https://creative-tim.com/contact-us?ref=mtk",
+        },
+      ],
+    },
+    {
+      name: "CONTACT US",
+      items: [
+        {
+          name: "info@ashbardplatinum.ca",
+          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/LICENSE.md?ref=mtk",
+        },
+        {
+          name: "(403) 123 000",
+          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CONTRIBUTING.md?ref=mtk",
+        },
+        {
+          name: "Calgary, Alberta, Canada",
+          path: "",
         },
       ],
     },
