@@ -9,7 +9,7 @@ import {
 export function FeatureCard({ color, icon, title, description }) {
   return (
     <Card
-      className="rounded-3xl p-6 shadow-lg shadow-gray-500/10"
+      className="mt-5 rounded-3xl p-6 shadow-lg shadow-gray-500/10 lg:mt-0"
       style={{ backgroundColor: "#F5F4F4" }}
     >
       <CardBody className="flex flex-col items-center">

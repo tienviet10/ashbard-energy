@@ -23,27 +23,27 @@ export function Home() {
   return (
     <>
       <div className="relative flex h-screen content-center items-center justify-center pb-32 pt-16">
-        <div className="absolute top-0 h-full w-full bg-[url('/img/background-3.svg')] bg-cover bg-center" />
+        <div className="absolute top-0 h-full w-full bg-[url('/img/background-3.png')] bg-cover bg-center" />
         <div className="absolute top-0 h-full w-full bg-black/20 bg-cover bg-center" />
         <div className="max-w-8xl container relative mx-auto">
           <div className="flex flex-wrap items-center">
             <div className="mx-auto w-full px-4 text-center lg:w-8/12 lg:text-left">
               <Typography
-                color="white"
                 className="mb-6 text-5xl font-normal lg:text-8xl"
+                style={{ color: "#2E294E" }}
               >
                 Oil and Gas
               </Typography>
               <Typography
                 variant="lead"
-                color="white"
                 className="text-xl font-normal opacity-80 lg:text-2xl"
+                style={{ color: "#2E294E" }}
               >
                 We offer focused expert and support services in the oil and gas
                 industry designed with cost-effective structures to adequately
                 facilitate clients’ operations for continuous performance.
               </Typography>
-              <Button className="mt-10 rounded-full bg-orange-700 px-10 py-3 text-lg font-normal normal-case text-white hover:bg-orange-800 lg:py-6 lg:text-xl">
+              <Button className="mt-10 rounded-full bg-orange-700 px-10 py-3 text-lg font-normal normal-case text-white hover:bg-orange-800 lg:py-5 lg:text-xl">
                 Learn More
               </Button>
             </div>
@@ -58,7 +58,10 @@ export function Home() {
         </div>
       </section>
 
-      <section className="mt-10 bg-orange-700 py-20 text-white lg:mt-24">
+      <section
+        className="mt-10 py-20 text-white lg:mt-24"
+        style={{ backgroundColor: "#F6871F" }}
+      >
         <ClientTestimonials />
       </section>
 

@@ -22,7 +22,7 @@ const OurServiceSection = ({ featuresData }) => {
         </div>
       </div>
       <div className="mt-0 flex flex-wrap items-center lg:mt-20">
-        <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
+        <div className="mx-auto mt-14 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
           <img
             alt="Card Image"
             src="/img/Oil-and-Gas-Image.svg"
@@ -69,7 +69,7 @@ const OurServiceSection = ({ featuresData }) => {
             </Button>
           </div>
         </div>
-        <div className="order-first mx-auto mt-24 flex w-full justify-center px-4 md:order-none md:w-4/12 lg:mt-0">
+        <div className="order-first mx-auto mt-14 flex w-full justify-center px-4 md:order-none md:w-4/12 lg:mt-0">
           <img
             alt="Card Image"
             src="/img/transportation-logistic.svg"
@@ -78,7 +78,7 @@ const OurServiceSection = ({ featuresData }) => {
         </div>
       </div>
       <div className="flex flex-wrap items-center lg:mt-20">
-        <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
+        <div className="mx-auto mt-14 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
           <img
             alt="Card Image"
             src="/img/consulting-service.svg"
