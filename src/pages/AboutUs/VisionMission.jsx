@@ -13,7 +13,7 @@ const VisionMission = () => {
         >
           OUR VISION
         </Typography>
-        <Typography className="mt-6 w-[100%] max-w-[550px]">
+        <Typography className="mt-6 w-[100%] max-w-[550px] text-lg">
           Our vision is to be the choice provider of efficient
           technology-focused support services and ancillary products in the
           industry.
@@ -37,7 +37,7 @@ const VisionMission = () => {
         >
           OUR MISSION
         </Typography>
-        <Typography className="mt-6 max-w-[550px] text-left">
+        <Typography className="mt-6 max-w-[550px] text-left text-lg">
           Our vision is to be the choice provider of efficient
           technology-focused support services and ancillary products in the
           industry.
