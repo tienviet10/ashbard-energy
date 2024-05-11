@@ -1,20 +1,12 @@
 import { Footer } from "@/widgets/layout";
 import React from "react";
-import Description from "./Description";
 import backgroundImageMobile from "/img/background-about-us-mobile.png";
 import backgroundImageDesktop from "/img/background-about-us.png";
-import VisionMission from "./VisionMission";
-import Values from "./Values";
 
-export const AboutUs = () => {
+export const Services = () => {
   return (
     <>
       <div className="">
-        <img
-          src={backgroundImageMobile}
-          alt="Background"
-          className="inset-0 w-full object-cover"
-        />
         <img
           src={backgroundImageDesktop}
           alt="Background"
@@ -22,21 +14,17 @@ export const AboutUs = () => {
         />
       </div>
 
-      <section className="flex items-center justify-center px-12 py-16 sm:px-20 sm:py-28  ">
-        <VisionMission />
+      <section
+        className="z-100 absolute mt-24 flex w-[100%] items-center justify-center px-12 py-16 sm:px-20 sm:py-28"
+        style={{ backgroundColor: "white" }}
+      >
+        Hello
       </section>
-
       <section
         className="flex items-center justify-center px-12 py-16 sm:px-20 sm:py-28"
         style={{ backgroundColor: "#2E294E" }}
-      >
-        <Description />
-      </section>
-
-      <section className="flex items-center justify-center px-12 py-16 sm:px-20 sm:py-28">
-        <Values />
-      </section>
-
+      ></section>
+      <section className="flex items-center justify-center px-12 py-16 sm:px-20 sm:py-28"></section>
       <div style={{ backgroundColor: "#2E294E" }}>
         <Footer />
       </div>
@@ -44,4 +32,4 @@ export const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default Services;
