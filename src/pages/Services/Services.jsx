@@ -31,12 +31,12 @@ export const Services = () => {
           We offer a wide range of services to meed your needs
         </Typography>
 
-        <div className="flex w-full max-w-[1500px] justify-between  px-4">
+        <div className="mb-32 mt-20 flex w-full max-w-[1500px] justify-between px-4">
           <div
             className="flex flex-col items-center"
             style={{ color: "#F6871F" }}
           >
-            <Typography className="mb-2 text-7xl">19</Typography>
+            <Typography className="mb-2 text-7xl font-normal">19</Typography>
             <Typography className="text-center text-2xl font-normal">
               Years of Experience
             </Typography>
@@ -45,7 +45,7 @@ export const Services = () => {
             className="flex flex-col items-center"
             style={{ color: "#F6871F" }}
           >
-            <Typography className="mb-2 text-7xl">502</Typography>
+            <Typography className="mb-2 text-7xl font-normal">502</Typography>
             <Typography className="text-center text-2xl font-normal">
               Completed Projects
             </Typography>
@@ -54,7 +54,7 @@ export const Services = () => {
             className="flex flex-col items-center"
             style={{ color: "#F6871F" }}
           >
-            <Typography className="mb-2  text-7xl">120</Typography>
+            <Typography className="mb-2  text-7xl font-normal">120</Typography>
             <Typography className="text-center text-2xl font-normal">
               Construction
             </Typography>
@@ -63,7 +63,7 @@ export const Services = () => {
             className="flex flex-col items-center"
             style={{ color: "#F6871F" }}
           >
-            <Typography className="mb-2 text-7xl">12</Typography>
+            <Typography className="mb-2 text-7xl font-normal">12</Typography>
             <Typography className="text-center text-2xl font-normal">
               Running Projects
             </Typography>
