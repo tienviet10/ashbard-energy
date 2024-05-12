@@ -10,7 +10,7 @@ const ServiceCard = ({ imageSrc, title, description }) => {
       <img
         src={imageSrc}
         alt="Service"
-        className="h-48 w-full object-cover object-center"
+        className="h-60 w-full object-cover object-center"
       />
       <div className="inset-0 mt-4 flex flex-col items-center justify-center px-6">
         <Typography
