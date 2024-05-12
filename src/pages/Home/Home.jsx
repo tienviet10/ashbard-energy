@@ -30,14 +30,14 @@ export function Home() {
             <div className="mx-auto w-full px-4 text-center lg:w-8/12 lg:text-left">
               <Typography
                 className="mb-6 text-5xl font-normal lg:text-8xl"
-                style={{ color: "#2E294E" }}
+                style={{ color: "white" }}
               >
                 Oil and Gas
               </Typography>
               <Typography
                 variant="lead"
                 className="text-xl font-normal opacity-80 lg:text-2xl"
-                style={{ color: "#2E294E" }}
+                style={{ color: "white" }}
               >
                 We offer focused expert and support services in the oil and gas
                 industry designed with cost-effective structures to adequately

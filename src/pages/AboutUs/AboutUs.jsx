@@ -1,5 +1,4 @@
 import { Footer } from "@/widgets/layout";
-import { Button, Typography } from "@material-tailwind/react";
 import React from "react";
 import Description from "./Description";
 import backgroundImageMobile from "/img/background-about-us-mobile.png";
