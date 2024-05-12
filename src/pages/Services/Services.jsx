@@ -5,11 +5,13 @@ import backgroundImageDesktop from "/img/background-about-us.png";
 import { Typography } from "@material-tailwind/react";
 import StatsRow from "./StatsRow";
 import ServiceCard from "./ServiceCard";
+import ServicesRow from "./ServicesRow";
+import OilAndGasServiceServices from "./OilAndGasServiceServices";
 
 export const Services = () => {
   return (
     <>
-      <div className="">
+      <div>
         <img
           src={backgroundImageMobile}
           alt="Background"
@@ -33,27 +35,17 @@ export const Services = () => {
           We offer a wide range of services to meed your needs
         </Typography>
 
-        <div className="mb-32 mt-20 flex w-full max-w-[1000px] flex-wrap justify-between px-4">
-          <ServiceCard
-            imageSrc="/img/service2.png"
-            title="OIL & GAS SERVICES"
-            description="Providing unique oil and gas services to you with quality and satisfaction in mind."
-          />
-          <ServiceCard
-            imageSrc="/img/service1.png"
-            title="TRANSPORTATION & LOGISTICS"
-            description="Providing unique oil and gas services to you with quality and satisfaction in mind."
-          />
-          <ServiceCard
-            imageSrc="/img/service3.png"
-            title="CONSULTATION"
-            description="Providing unique oil and gas services to you with quality and satisfaction in mind."
-          />
+        <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:mt-24 lg:grid-cols-3">
+          <ServicesRow />
         </div>
 
-        <div className="mb-32 flex w-full max-w-[1000px] flex-wrap justify-between px-4">
+        <div className="mb-32 mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:mt-24 lg:grid-cols-4">
           <StatsRow />
         </div>
+
+        {/* <div className="mb-20 mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:mt-24 lg:grid-cols-3">
+          <OilAndGasServiceServices />
+        </div> */}
 
         <div className="w-[100%]" style={{ backgroundColor: "#2E294E" }}>
           <Footer />

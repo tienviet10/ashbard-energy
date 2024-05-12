@@ -4,7 +4,7 @@ import { Button, Typography } from "@material-tailwind/react";
 const ServiceCard = ({ imageSrc, title, description }) => {
   return (
     <div
-      className="flex w-[30%] min-w-[300px] max-w-[400px] flex-col items-center justify-between overflow-hidden rounded-lg shadow-lg"
+      className="mx-4 my-4 flex w-[300px] flex-col items-center justify-between overflow-hidden rounded-lg shadow-lg"
       style={{ backgroundColor: "#2E294E" }}
     >
       <img
