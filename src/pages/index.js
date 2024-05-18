@@ -6,3 +6,7 @@ export * from "@/pages/profile";
 export * from "@/pages/sign-in";
 export * from "@/pages/sign-up";
 export * from "@/pages/Services/Services";
+export * from "@/pages/Projects/Projects";
+export * from "@/pages/Events/Events";
+export * from "@/pages/Careers/Careers";
+export * from "@/pages/ContactUs/ContactUs";

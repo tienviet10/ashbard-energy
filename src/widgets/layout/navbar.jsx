@@ -67,7 +67,10 @@ export function Navbar({ brandName, routes, action }) {
         <div className="hidden lg:block">{navList}</div>
         <div className="hidden gap-2 lg:flex">
           <Typography as="li" variant="small" color="inherit">
-            <a href="" className="flex items-center gap-1 p-1 font-bold">
+            <a
+              href="/contact-us"
+              className="flex items-center gap-1 p-1 font-bold"
+            >
               <img
                 src="/img/bubble-chat.svg"
                 height={24}
@@ -127,7 +130,10 @@ export function Navbar({ brandName, routes, action }) {
             color="inherit"
             className="capitalize"
           >
-            <a href="" className="flex items-center gap-1 pl-1 font-bold">
+            <a
+              href="/contact-us"
+              className="flex items-center gap-1 pl-1 font-bold"
+            >
               Request a Quote
             </a>
           </Typography>

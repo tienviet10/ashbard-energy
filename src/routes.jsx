@@ -1,4 +1,13 @@
-import { Profile, Home, AboutUs, Services } from "@/pages";
+import {
+  Profile,
+  Home,
+  AboutUs,
+  Services,
+  Projects,
+  Events,
+  Careers,
+} from "@/pages";
+import ContactUs from "./pages/ContactUs/ContactUs";
 
 export const routes = [
   {
@@ -21,39 +30,23 @@ export const routes = [
   {
     name: "PROJECTS",
     path: "/profile",
-    element: <Home />,
+    element: <Projects />,
   },
   {
     name: "EVENTS",
-    path: "/profile",
-    element: <Home />,
+    path: "/events",
+    element: <Events />,
   },
   {
     name: "CAREERS",
-    path: "/profile",
-    element: <Profile />,
+    path: "/careers",
+    element: <Careers />,
   },
   {
     name: "CONTACT US",
-    path: "/profile",
-    element: <Home />,
+    path: "/contact-us",
+    element: <ContactUs />,
   },
-  // {
-  //   name: "Sign In",
-  //   path: "/sign-in",
-  //   element: <SignIn />,
-  // },
-  // {
-  //   name: "Sign Up",
-  //   path: "/sign-up",
-  //   element: <SignUp />,
-  // },
-  // {
-  //   name: "Docs",
-  //   href: "https://www.material-tailwind.com/docs/react/installation",
-  //   target: "_blank",
-  //   element: "",
-  // },
 ];
 
 export default routes;

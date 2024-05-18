@@ -43,7 +43,14 @@ export const Services = () => {
           <StatsRow />
         </div>
 
-        {/* <div className="mb-20 mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:mt-24 lg:grid-cols-3">
+        {/* <Typography
+          className="mb-6 mt-8 text-center text-4xl font-bold lg:mt-16 lg:text-7xl"
+          style={{ color: "#F6871F" }}
+        >
+          Oil and Gas Services
+        </Typography>
+
+        <div className="mb-20 grid grid-cols-1 gap-6 md:grid-cols-2 lg:mt-24 lg:grid-cols-3">
           <OilAndGasServiceServices />
         </div> */}
 
