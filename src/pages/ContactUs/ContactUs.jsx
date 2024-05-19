@@ -3,6 +3,8 @@ import backgroundImageMobile from "/img/background-about-us-mobile.png";
 import backgroundImageDesktop from "/img/background-about-us.png";
 import { Typography } from "@material-tailwind/react";
 import { Footer } from "@/widgets/layout";
+import ContactUsRow from "./ContactUsRow";
+import MapAndSendUsRow from "./MapAndSendUsRow";
 
 const ContactUs = () => {
   return (
@@ -28,7 +30,16 @@ const ContactUs = () => {
           Contact Us
         </Typography>
 
-        <div className="mb-20 mt-14 flex flex-col lg:mt-24"></div>
+        <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:mt-24 lg:grid-cols-3">
+          <ContactUsRow />
+        </div>
+
+        <div
+          className="mb-20 mt-16 w-full py-16"
+          style={{ backgroundColor: "#2E294E" }}
+        >
+          <MapAndSendUsRow />
+        </div>
       </section>
 
       <div className="w-full" style={{ backgroundColor: "#2E294E" }}>
