@@ -4,7 +4,7 @@ import React from "react";
 const MapAndSendUsRow = () => {
   return (
     <div className="container mx-auto grid grid-cols-1 gap-8 lg:grid-cols-2">
-      <div className="flex items-center justify-center">
+      <div className="mx-8 flex items-center justify-center">
         <img
           src="/img/map.png"
           alt="Contact Us"
