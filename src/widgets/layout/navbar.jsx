@@ -40,14 +40,14 @@ export function Navbar({ brandName, routes, action }) {
           className="capitalize"
         >
           {name === "SERVICES" ? (
-            <li className="group relative">
+            <li className="group relative p-1">
               <p
                 className="text-dark group-hover:text-primary flex cursor-pointer items-center justify-between py-2 font-bold dark:text-white/70 dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
                 onClick={() => handleSubmenu(index)}
               >
                 {name}
                 <span>
-                  <svg width="25" height="24" viewBox="0 0 25 24">
+                  <svg width="25" height="24" viewBox="0 0 24 24">
                     <path
                       fillRule="evenodd"
                       clipRule="evenodd"
