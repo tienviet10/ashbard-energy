@@ -4,7 +4,7 @@ import backgroundImageDesktop from "/img/background-about-us.png";
 import { Typography } from "@material-tailwind/react";
 import { Footer } from "@/widgets/layout";
 
-const ContactUs = () => {
+export const ContactUs = () => {
   return (
     <div className="relative flex min-h-screen flex-col">
       <div className="absolute inset-0 w-full object-cover">

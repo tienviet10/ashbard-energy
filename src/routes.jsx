@@ -6,8 +6,10 @@ import {
   Projects,
   Events,
   Careers,
+  ContactUs,
+  Transportation,
+  Consulting,
 } from "@/pages";
-import ContactUs from "./pages/ContactUs/ContactUs";
 
 export const routes = [
   {
@@ -24,8 +26,23 @@ export const routes = [
   },
   {
     name: "SERVICES",
-    path: "/services",
-    element: <Services />,
+    subRoutes: [
+      {
+        name: "Oil and Gas",
+        path: "/services",
+        element: <Services />,
+      },
+      {
+        name: "Transportation",
+        path: "/transportation",
+        element: <Transportation />,
+      },
+      {
+        name: "Consulting",
+        path: "/consulting",
+        element: <Consulting />,
+      },
+    ],
   },
   {
     name: "PROJECTS",
