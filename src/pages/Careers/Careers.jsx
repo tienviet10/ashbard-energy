@@ -29,7 +29,7 @@ export const Careers = () => {
           Careers
         </Typography>
 
-        <div className="mb-20 mt-14 flex flex-col lg:mt-24">
+        <div className="mb-20 mt-14 flex w-[90%] max-w-[600px] flex-col lg:mt-24">
           <CareerContent />
         </div>
       </section>
