@@ -1,8 +1,9 @@
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { Navbar } from "@/widgets/layout";
 import routes from "@/routes";
-import Transportation from "./pages/Transportation/Transportation";
-import Consulting from "./pages/Consulting/Consulting";
+import OilAndGas from "./pages/Home/OilAndGas";
+import Transportation from "./pages/Home/Transportation";
+import Consulting from "./pages/Home/Consulting";
 
 function App() {
   const { pathname } = useLocation();
@@ -19,6 +20,7 @@ function App() {
           ({ path, element }, key) =>
             element && <Route key={key} exact path={path} element={element} />,
         )}
+        <Route exact path="/oil-and-gas" element={<OilAndGas />} />
         <Route exact path="/transportation" element={<Transportation />} />
         <Route exact path="/consulting" element={<Consulting />} />
         <Route path="*" element={<Navigate to="/home" replace />} />
