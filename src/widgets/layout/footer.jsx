@@ -15,9 +15,13 @@ export function Footer({ title, description, socials, menus, copyright }) {
             {menus.map(({ name, items }) => (
               <div key={name} className="text-center lg:text-left">
                 <Typography
-                  variant="small"
+                  variant="medium"
                   className="mb-2 block font-medium uppercase"
-                  style={{ color: "#FF8600" }}
+                  style={{
+                    color: "#FF8600",
+                    fontFamily: "Gilroy",
+                    fontWeight: "550",
+                  }}
                 >
                   {name}
                 </Typography>
@@ -31,6 +35,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
                         rel="noreferrer"
                         variant="small"
                         className="mb-2 block font-normal text-white hover:text-blue-gray-700"
+                        style={{ fontFamily: "Gilroy", fontWeight: "500" }}
                       >
                         {item.name}
                       </Typography>

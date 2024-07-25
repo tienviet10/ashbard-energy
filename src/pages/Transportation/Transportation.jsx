@@ -22,9 +22,11 @@ export const Transportation = () => {
                 className="text-xl font-normal opacity-80 lg:text-2xl"
                 style={{ color: "white" }}
               >
-                We excel through our complimented personnel, innovative
-                technology, and high quality well services, setting us apart
-                from competitors and earning trust as industry leaders
+                Ashbard Platinum specializes in transportation and logistics,
+                providing FTL, LTL, expedited shipping, specialized freight
+                handling, and distribution services. Our modern fleet, skilled
+                drivers, advanced tracking, and nationwide coverage ensure
+                customized, efficient delivery solutions.
               </Typography>
               <Button className="mt-10 rounded-full bg-orange-700 px-10 py-3 text-lg font-normal normal-case text-white hover:bg-orange-800 lg:py-5 lg:text-xl">
                 Learn More

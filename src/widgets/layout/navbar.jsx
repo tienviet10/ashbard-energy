@@ -38,11 +38,12 @@ export function Navbar({ brandName, routes, action }) {
           variant="small"
           color="inherit"
           className="capitalize"
+          style={{ fontFamily: "Gilroy", fontWeight: "200" }}
         >
           {name === "SERVICES" ? (
             <li className="group relative p-1">
               <p
-                className="text-dark group-hover:text-primary flex cursor-pointer items-center justify-between py-2 font-bold dark:text-white/70 dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
+                className="text-dark group-hover:text-primary flex cursor-pointer items-center justify-between py-2  dark:text-white/70 dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
                 onClick={() => handleSubmenu(index)}
               >
                 {name}
@@ -66,7 +67,7 @@ export function Navbar({ brandName, routes, action }) {
                   <Link
                     to={submenuItem.path}
                     key={index}
-                    className="hover:text-primary block rounded py-2.5 text-sm font-bold text-black dark:text-white/70 dark:hover:text-white lg:px-3"
+                    className="hover:text-primary block rounded py-2.5 text-sm  text-black dark:text-white/70 dark:hover:text-white lg:px-3"
                   >
                     {submenuItem.name}
                   </Link>
@@ -77,7 +78,7 @@ export function Navbar({ brandName, routes, action }) {
             <a
               href={href}
               target={target}
-              className="flex items-center gap-1 p-1 font-bold"
+              className="flex items-center gap-1 p-1"
             >
               {icon &&
                 React.createElement(icon, {
@@ -89,7 +90,7 @@ export function Navbar({ brandName, routes, action }) {
             <Link
               to={path}
               target={target}
-              className="flex items-center gap-1 p-1 font-bold"
+              className="flex items-center gap-1 p-1"
             >
               {icon &&
                 React.createElement(icon, {
@@ -110,10 +111,7 @@ export function Navbar({ brandName, routes, action }) {
         <div className="hidden lg:block">{navList}</div>
         <div className="hidden gap-2 lg:flex">
           <Typography as="li" variant="small" color="inherit">
-            <a
-              href="/contact-us"
-              className="flex items-center gap-1 p-1 font-bold"
-            >
+            <a href="/contact-us" className="flex items-center gap-1 p-1 ">
               <img
                 src="/img/bubble-chat.svg"
                 height={24}
@@ -173,10 +171,7 @@ export function Navbar({ brandName, routes, action }) {
             color="inherit"
             className="capitalize"
           >
-            <a
-              href="/contact-us"
-              className="flex items-center gap-1 pl-1 font-bold"
-            >
+            <a href="/contact-us" className="flex items-center gap-1 pl-1 ">
               Request a Quote
             </a>
           </Typography>

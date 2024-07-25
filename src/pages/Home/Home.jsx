@@ -18,6 +18,7 @@ import ExecSection from "./ExecSection";
 import OurServiceSection from "./OurServiceSection";
 import ClientTestimonials from "./ClientTestimonials";
 import PartnerSection from "./PartnerSection";
+import { Link } from "react-router-dom";
 
 export function Home() {
   return (
@@ -30,20 +31,26 @@ export function Home() {
             <div className="mx-auto w-full px-4 text-center lg:w-8/12 lg:text-left">
               <Typography
                 className="mb-6 text-5xl font-normal lg:text-8xl"
-                style={{ color: "white" }}
+                style={{ color: "white", fontFamily: "Gilroy" }}
               >
                 Oil and Gas
               </Typography>
               <Typography
                 variant="lead"
                 className="text-xl font-normal opacity-80 lg:text-2xl"
-                style={{ color: "white" }}
+                style={{ color: "white", fontFamily: "Gilroy" }}
               >
-                We offer focused expert and support services in the oil and gas
-                industry designed with cost-effective structures to adequately
-                facilitate clients’ operations for continuous performance.
+                Ashbard Platinum specializes in comprehensive oil and gas
+                services, including well testing, e-line services, valve
+                procurement, and skilled manpower provision. We prioritize
+                operational efficiency and professional expertise to deliver
+                tailored solutions that ensure success in the industry.
               </Typography>
-              <Button className="mt-10 rounded-full bg-orange-700 px-10 py-3 text-lg font-normal normal-case text-white hover:bg-orange-800 lg:py-5 lg:text-xl">
+
+              <Button
+                className="mt-10 rounded-full bg-orange-700 px-10 py-3 text-lg font-normal normal-case text-white hover:bg-orange-800 lg:py-5 lg:text-xl"
+                style={{ fontFamily: "Gilroy, sans-serif" }}
+              >
                 Learn More
               </Button>
             </div>
@@ -51,7 +58,10 @@ export function Home() {
         </div>
       </div>
 
-      <section className="bg-white px-4 pb-20 pt-4">
+      <section
+        className="bg-white px-4 pb-20 pt-4"
+        style={{ fontFamily: "Gilroy" }}
+      >
         <div className="container mx-auto">
           <ExecSection />
           <OurServiceSection featuresData={featuresData} />

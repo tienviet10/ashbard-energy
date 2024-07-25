@@ -9,6 +9,7 @@ import {
   ContactUs,
   Transportation,
   Consulting,
+  TransportationServices,
 } from "@/pages";
 
 export const routes = [
@@ -63,6 +64,11 @@ export const routes = [
     name: "CONTACT US",
     path: "/contact-us",
     element: <ContactUs />,
+  },
+  {
+    name: "TRANSPORTATION SERVICES",
+    path: "/transportation-services",
+    element: <TransportationServices />,
   },
 ];
 
