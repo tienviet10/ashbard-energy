@@ -4,9 +4,7 @@ import backgroundImageMobile from "/img/background-about-us-mobile.png";
 import backgroundImageDesktop from "/img/background-about-us.png";
 import { Typography } from "@material-tailwind/react";
 import StatsRow from "./StatsRow";
-import ServiceCard from "./ServiceCard";
 import ServicesRow from "./ServicesRow";
-import OilAndGasServiceServices from "./OilAndGasServiceServices";
 
 export const Services = () => {
   return (

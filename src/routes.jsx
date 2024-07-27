@@ -7,6 +7,7 @@ import {
   Events,
   Careers,
   ContactUs,
+  OilAndGas,
   Transportation,
   Consulting,
   TransportationServices,
@@ -30,8 +31,8 @@ export const routes = [
     subRoutes: [
       {
         name: "Oil and Gas",
-        path: "/services",
-        element: <Services />,
+        path: "/oil-and-gas",
+        element: <OilAndGas />,
       },
       {
         name: "Transportation",
