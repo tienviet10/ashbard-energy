@@ -99,27 +99,27 @@ Footer.defaultProps = {
         },
       ],
     },
-    {
-      name: "IMPORTANT LINKS",
-      items: [
-        {
-          name: "About Us",
-          path: "",
-        },
-        {
-          name: "Services",
-          path: "",
-        },
-        {
-          name: "Updates",
-          path: "",
-        },
-        {
-          name: "Testimonials",
-          path: "",
-        },
-      ],
-    },
+    //     {
+    //       name: "IMPORTANT LINKS",
+    //       items: [
+    //         {
+    //           name: "About Us",
+    //           path: "",
+    //         },
+    //         {
+    //           name: "Services",
+    //           path: "",
+    //         },
+    //         {
+    //           name: "Updates",
+    //           path: "",
+    //         },
+    //         {
+    //           name: "Testimonials",
+    //           path: "",
+    //         },
+    //       ],
+    //     },
     {
       name: "CONTACT US",
       items: [

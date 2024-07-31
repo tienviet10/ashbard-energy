@@ -70,20 +70,21 @@ export function Home() {
                     <div className="mx-auto w-full px-4 lg:w-8/12">
                       <Typography
                         className="mb-6 text-5xl font-normal lg:text-8xl"
-                        style={{ color: "white" }}
+                        style={{ color: "white", fontFamily: "Gilroy" }}
                       >
                         {item?.title}
                       </Typography>
                       <Typography
                         variant="lead"
                         className="text-xl font-normal opacity-80 lg:text-2xl"
-                        style={{ color: "white" }}
+                        style={{ color: "white", fontFamily: "Gilroy" }}
                       >
                         {item?.detail}
                       </Typography>
                       <Button
                         className="mt-10 rounded-full bg-orange-700 px-10 py-3 text-lg font-normal normal-case text-white hover:bg-orange-800 lg:py-5 lg:text-xl"
                         onClick={() => navigate(item?.link)}
+                        style={{ fontFamily: "Gilroy" }}
                       >
                         Learn More
                       </Button>
@@ -119,12 +120,12 @@ export function Home() {
         </div>
       </section>
 
-      <section
+      {/* <section
         className="mt-10 py-20 text-white lg:mt-24"
         style={{ backgroundColor: "#F6871F" }}
       >
         <ClientTestimonials />
-      </section>
+      </section> */}
 
       <section className="bg-white px-4 pb-20 pt-4">
         <PartnerSection />
