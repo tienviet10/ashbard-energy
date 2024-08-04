@@ -31,7 +31,8 @@ export function Footer({ title, description, socials, menus, copyright }) {
                       <Typography
                         as="a"
                         href={item.path}
-                        target="_blank"
+                        // href="/"
+                        // target="_blank"
                         rel="noreferrer"
                         variant="small"
                         className="mb-2 block font-normal text-white hover:text-blue-gray-700"
@@ -45,6 +46,16 @@ export function Footer({ title, description, socials, menus, copyright }) {
               </div>
             ))}
           </div>
+        </div>
+        <div className="mt-8">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.90720908757!2d-114.071883!3d51.044734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5371700c8d18d507%3A0x90169c1f18d7fd8c!2sCalgary%2C%20AB%2C%20Canada!5e0!3m2!1sen!2s!4v1625154808488!5m2!1sen!2s"
+            width="100%"
+            height="300"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+          ></iframe>
         </div>
       </div>
     </footer>
@@ -83,57 +94,36 @@ Footer.defaultProps = {
       items: [
         {
           name: "About Us",
-          path: "",
+          path: "/about-us",
         },
         {
           name: "Services",
-          path: "",
+          path: "/services",
         },
         {
           name: "Updates",
-          path: "",
+          path: "/updates",
         },
         {
           name: "Testimonials",
-          path: "",
+          path: "/testimonials",
         },
       ],
     },
-    //     {
-    //       name: "IMPORTANT LINKS",
-    //       items: [
-    //         {
-    //           name: "About Us",
-    //           path: "",
-    //         },
-    //         {
-    //           name: "Services",
-    //           path: "",
-    //         },
-    //         {
-    //           name: "Updates",
-    //           path: "",
-    //         },
-    //         {
-    //           name: "Testimonials",
-    //           path: "",
-    //         },
-    //       ],
-    //     },
     {
       name: "CONTACT US",
       items: [
         {
           name: "info@ashbardplatinum.ca",
-          path: "",
+          path: "mailto:info@ashbardplatinum.ca",
         },
         {
           name: "(403) 123 000",
-          path: "",
+          path: "tel:+1403123000",
         },
         {
           name: "Calgary, Alberta, Canada",
-          path: "",
+          path: "https://www.google.com/maps/place/Calgary,+AB,+Canada",
         },
       ],
     },
