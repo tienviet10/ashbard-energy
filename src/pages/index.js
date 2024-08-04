@@ -13,5 +13,6 @@ export * from "@/pages/Projects/Projects";
 export * from "@/pages/Events/Events";
 export * from "@/pages/Careers/Careers";
 export * from "@/pages/ContactUs/ContactUs";
-// export * from "@/pages/Consulting/Consulting";
+export * from "@/pages/Home/Consulting";
+export * from "@/pages/Home/Transportation";
 export * from "@/pages/Transportation/TransportationServices";
