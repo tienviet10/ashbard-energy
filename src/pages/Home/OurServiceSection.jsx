@@ -1,8 +1,10 @@
 import { FeatureCard } from "@/widgets/cards";
 import { Button, Typography } from "@material-tailwind/react";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const OurServiceSection = ({ featuresData }) => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="mt-20 lg:mt-24">
@@ -45,14 +47,14 @@ const OurServiceSection = ({ featuresData }) => {
             className="mb-8 text-center font-normal text-blue-gray-300"
             style={{ fontFamily: "Gilroy" }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra
-            orci sagittis eu volutpat odio facilisis mauris.
+            Comprehensive support for drilling, exploration, and production,
+            enhancing efficiency and safety in the oil and gas industry.
           </Typography>
           <div className="flex">
             <Button
               className="rounded-full bg-orange-700 px-10 py-4 text-xl font-light normal-case text-white hover:bg-orange-800"
               style={{ fontFamily: "Gilroy" }}
+              onClick={() => navigate("/oil-and-gas")}
             >
               Learn More
             </Button>
@@ -72,14 +74,14 @@ const OurServiceSection = ({ featuresData }) => {
             className="mb-8 text-center font-normal text-blue-gray-300"
             style={{ fontFamily: "Gilroy" }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra
-            orci sagittis eu volutpat odio facilisis mauris.
+            End-to-end logistics solutions with advanced fleet management and
+            real-time tracking for seamless transportation.
           </Typography>
           <div className="flex">
             <Button
               className="rounded-full bg-orange-700 px-10 py-4 text-xl font-light normal-case text-white hover:bg-orange-800"
               style={{ fontFamily: "Gilroy" }}
+              onClick={() => navigate("/transportation-services")}
             >
               Learn More
             </Button>
@@ -119,14 +121,14 @@ const OurServiceSection = ({ featuresData }) => {
             className="mb-8 text-center font-normal text-blue-gray-300"
             style={{ fontFamily: "Gilroy" }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra
-            orci sagittis eu volutpat odio facilisis mauris.
+            Expert guidance in operational improvement, compliance, and risk
+            management, tailored to drive business success.
           </Typography>
           <div className="flex">
             <Button
               className="rounded-full bg-orange-700 px-10 py-4 text-xl font-light normal-case text-white hover:bg-orange-800"
               style={{ fontFamily: "Gilroy" }}
+              onClick={() => navigate("/consulting")}
             >
               Learn More
             </Button>

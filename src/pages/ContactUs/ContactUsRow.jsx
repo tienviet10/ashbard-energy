@@ -7,7 +7,7 @@ const ContactUsRow = () => {
       <ContactUsCard
         icon="/img/address.svg"
         title="Address"
-        description1="4 City Scape Dr,"
+        description1="4 Cityscape Dr NE,"
         description2="Calgary, TOE 3P4"
       />
       <ContactUsCard

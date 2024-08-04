@@ -25,6 +25,18 @@ const displayData = [
     description:
       "The needs, wants and visions of our customers remains our priority. We pay attention to the details of our jobs, making our results globally rated.",
   },
+  {
+    icon: "/img/ecology.svg",
+    title: "Business Sustainability",
+    description:
+      "We prioritize sustainable practices to ensure long-term business success, environmental responsibility, and positive community impact.",
+  },
+  {
+    icon: "/img/badge.svg",
+    title: "Professionalism",
+    description:
+      "Our team is dedicated to maintaining the highest standards of professionalism, ensuring exceptional service and client satisfaction.",
+  },
 ];
 
 const Values = () => {

@@ -4,6 +4,7 @@ import backgroundImageDesktop from "/img/background-about-us.png";
 import { Typography } from "@material-tailwind/react";
 import { Footer } from "@/widgets/layout";
 import ContactUsRow from "./ContactUsRow";
+import LiveMap from "./LiveMap";
 import MapAndSendUsRow from "./MapAndSendUsRow";
 
 export const ContactUs = () => {
@@ -38,7 +39,8 @@ export const ContactUs = () => {
           className="mb-20 mt-16 w-full py-16"
           style={{ backgroundColor: "#2E294E" }}
         >
-          <MapAndSendUsRow />
+          {/* <MapAndSendUsRow /> */}
+          <LiveMap />
         </div>
       </section>
 

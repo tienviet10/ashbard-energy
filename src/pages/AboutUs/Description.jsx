@@ -3,7 +3,7 @@ import React from "react";
 
 const displayData = [
   {
-    title: "19 YEARS OF EXPERIENCE",
+    title: "20 YEARS OF EXPERIENCE",
     description:
       "Our cumulative projects man-hours to date have given us a strategic edge in service delivery.",
   },

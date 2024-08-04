@@ -20,12 +20,16 @@ export function FeatureCard({ color, icon, title, description }) {
         />
         <Typography
           variant="h5"
-          className="mb-8 text-justify text-2xl font-bold"
+          className="mb-8 text-justify text-2xl "
           color="blue-gray"
+          style={{ fontFamily: "Gilroy", fontWeight: "550" }}
         >
           {title}
         </Typography>
-        <Typography className="text-justify font-normal text-black">
+        <Typography
+          className="text-justify font-normal text-black"
+          style={{ fontFamily: "Gilroy" }}
+        >
           {description}
         </Typography>
       </CardBody>

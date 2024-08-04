@@ -3,8 +3,8 @@ import {
   Home,
   AboutUs,
   Services,
-  Projects,
-  Events,
+  //   Projects,
+  //   Events,
   Careers,
   ContactUs,
   OilAndGas,
@@ -37,7 +37,7 @@ export const routes = [
       {
         name: "Transportation",
         path: "/transportation",
-        element: <Transportation />,
+        element: <TransportationServices />,
       },
       {
         name: "Consulting",
@@ -46,16 +46,16 @@ export const routes = [
       },
     ],
   },
-  {
-    name: "PROJECTS",
-    path: "/profile",
-    element: <Projects />,
-  },
-  {
-    name: "EVENTS",
-    path: "/events",
-    element: <Events />,
-  },
+  //   {
+  //     name: "PROJECTS",
+  //     path: "/profile",
+  //     element: <Projects />,
+  //   },
+  //   {
+  //     name: "EVENTS",
+  //     path: "/events",
+  //     element: <Events />,
+  //   },
   {
     name: "CAREERS",
     path: "/careers",
@@ -65,11 +65,6 @@ export const routes = [
     name: "CONTACT US",
     path: "/contact-us",
     element: <ContactUs />,
-  },
-  {
-    name: "TRANSPORTATION SERVICES",
-    path: "/transportation-services",
-    element: <TransportationServices />,
   },
 ];
 
