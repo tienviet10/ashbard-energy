@@ -48,11 +48,11 @@ export function Home() {
       <div className="relative flex h-screen content-center items-center justify-center pb-32 pt-16">
         <div className="absolute">
           <div
-            className="no-scrollbar relative flex snap-x snap-mandatory overflow-x-scroll"
-            style={{
-              paddingBottom: "-5px",
-              clipPath: "inset(0 0 -5px 0)",
-            }}
+            className="no-scrollbar relative flex h-screen snap-x snap-mandatory overflow-x-scroll"
+            // style={{
+            //   paddingBottom: "-5px",
+            //   clipPath: "inset(0 0 -5px 0)",
+            // }}
           >
             {bgImg.map((item, index) => (
               <section
