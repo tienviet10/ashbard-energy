@@ -15,12 +15,18 @@ const MapAndSendUsRow = () => {
         <Typography variant="h4" className="mb-6 text-center text-gray-800">
           Send Us Message
         </Typography>
-        <form>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="PLEASE_PASTE_YOUR_ACCESS_KEY_HERE"
+          />
           <div className="mb-4 flex gap-4">
             <div className="w-1/2">
               <input
                 type="text"
                 id="fullName"
+                name="fullName"
                 placeholder="Full Name"
                 className="w-full rounded border p-3 text-gray-700 focus:outline-none focus:ring-2"
               />
@@ -28,6 +34,7 @@ const MapAndSendUsRow = () => {
             <div className="w-1/2">
               <input
                 type="email"
+                name="email"
                 id="email"
                 placeholder="Email"
                 className="w-full rounded border p-3 text-gray-700 focus:outline-none focus:ring-2"
@@ -39,6 +46,7 @@ const MapAndSendUsRow = () => {
               <input
                 type="tel"
                 id="phone"
+                name="phone"
                 placeholder="Phone Number"
                 className="w-full rounded border p-3 text-gray-700 focus:outline-none focus:ring-2"
               />
@@ -46,6 +54,7 @@ const MapAndSendUsRow = () => {
             <div className="w-1/2">
               <input
                 type="text"
+                name="subject"
                 id="subject"
                 placeholder="Subject"
                 className="w-full rounded border p-3 text-gray-700 focus:outline-none focus:ring-2"
@@ -55,6 +64,7 @@ const MapAndSendUsRow = () => {
           <div className="mb-4">
             <textarea
               id="message"
+              name="message"
               placeholder="Your Message"
               className="w-full rounded border p-3 text-gray-700 focus:outline-none focus:ring-2"
             />
