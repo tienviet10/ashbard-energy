@@ -12,13 +12,13 @@ const ExecSection = () => {
           {/* Left Side */}
           <div className="flex flex-col justify-between lg:mr-14">
             <div className="flex flex-col items-center lg:items-start">
-              <img
+              {/* <img
                 alt="Card Image"
                 src="/img/engr-adelaja-photo.png"
                 className="mb-6 rounded-3xl lg:mb-0"
                 style={{ maxHeight: "300px", maxWidth: "300px" }}
-              />
-              <div className="flex w-full flex-col items-center justify-center">
+              /> */}
+              {/* <div className="flex w-full flex-col items-center justify-center">
                 <Typography
                   variant="small"
                   className="mt-3 text-center text-4xl font-normal lg:mt-10 lg:text-left"
@@ -35,7 +35,7 @@ const ExecSection = () => {
                 >
                   CEO Ashbard Platinum Inc.
                 </Typography>
-              </div>
+              </div> */}
             </div>
           </div>
 
