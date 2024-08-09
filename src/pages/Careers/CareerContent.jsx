@@ -16,10 +16,20 @@ const CareerContent = () => {
 
   return (
     <div className="w-full rounded-lg">
-      <form className="space-y-6">
+      <form
+        className="space-y-6"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+      >
+        <input
+          type="hidden"
+          name="access_key"
+          value="PLEASE_PASTE_YOUR_ACCESS_KEY_HERE"
+        />
         <div className="space-y-2">
           <input
             type="text"
+            name="fullName"
             className="h-[50px] w-full rounded-lg border px-4 py-2 focus:border-blue-500 focus:outline-none"
             placeholder="Full Name"
             style={{ backgroundColor: "#D9D9D9" }}
@@ -28,6 +38,7 @@ const CareerContent = () => {
         <div className="space-y-2">
           <input
             type="email"
+            name="email"
             className="h-[50px] w-full rounded-lg border px-4 py-2 focus:border-blue-500 focus:outline-none"
             placeholder="Email"
             style={{ backgroundColor: "#D9D9D9" }}
@@ -36,6 +47,7 @@ const CareerContent = () => {
         <div className="space-y-2">
           <input
             type="tel"
+            name="phone"
             className="h-[50px] w-full rounded-lg border px-4 py-2 focus:border-blue-500 focus:outline-none"
             placeholder="Phone"
             style={{ backgroundColor: "#D9D9D9" }}
@@ -44,6 +56,7 @@ const CareerContent = () => {
         <div className="space-y-2">
           <input
             type="text"
+            name="qualification"
             className="h-[50px] w-full rounded-lg border px-4 py-2 focus:border-blue-500 focus:outline-none"
             placeholder="Qualification"
             style={{ backgroundColor: "#D9D9D9" }}
@@ -51,6 +64,7 @@ const CareerContent = () => {
         </div>
         <div className="space-y-2">
           <textarea
+            name="experience"
             className="h-[150px] w-full rounded-lg border px-4 py-2 focus:border-blue-500 focus:outline-none"
             style={{ backgroundColor: "#D9D9D9" }}
             placeholder="Experience"
@@ -64,6 +78,7 @@ const CareerContent = () => {
         </div>
         <div className="space-y-2">
           <input
+            name="position"
             type="text"
             className="h-[50px] w-full rounded-lg border px-4 py-2 focus:border-blue-500 focus:outline-none"
             placeholder="Position Apply For"
@@ -72,6 +87,7 @@ const CareerContent = () => {
         </div>
         <div className="space-y-2">
           <textarea
+            name="experience2"
             className="h-[150px] w-full rounded-lg border px-4 py-2 focus:border-blue-500 focus:outline-none"
             style={{ backgroundColor: "#D9D9D9" }}
             placeholder="Experience"
@@ -85,6 +101,7 @@ const CareerContent = () => {
         </div>
         <div className="space-y-2">
           <textarea
+            name="question"
             className="h-[150px] w-full rounded-lg border px-4 py-2 focus:border-blue-500 focus:outline-none"
             style={{ backgroundColor: "#D9D9D9" }}
             placeholder="Questions"
