@@ -1,66 +1,53 @@
+import { Button, Typography } from "@material-tailwind/react";
 import React from "react";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
 
-export default function MapAndSendUsRow() {
-  const [result, setResult] = React.useState("");
-
-  const onSubmit = async (event) => {
-    event.preventDefault();
-    setResult("Sending....");
-
-    const formData = new FormData(event.target);
-    formData.append("access_key", "75b3b646-cbae-4c5a-ab3a-c3da14fecca5");
-
-    try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: formData,
-      });
-
-      const data = await response.json();
-
-      if (data.success) {
-        setResult("Form Submitted Successfully");
-        event.target.reset();
-      } else {
-        console.log("Error", data);
-        setResult(data.message);
-      }
-    } catch (error) {
-      console.error("Error submitting the form", error);
-      setResult("An error occurred while submitting the form.");
-    }
-  };
+const LiveMap = () => {
+  const position = [51.1578, -113.96661]; // Set your desired coordinates here
 
   return (
     <div className="container mx-auto grid grid-cols-1 gap-8 lg:grid-cols-2">
       <div className="mx-8 flex items-center justify-center">
-        <img
-          src="/img/map.png"
-          alt="Contact Us"
-          className="h-auto w-full max-w-[400px] rounded-lg"
-        />
+        <div className="h-auto w-full max-w-[400px] rounded-lg">
+          <MapContainer
+            center={position}
+            zoom={13}
+            scrollWheelZoom={false}
+            style={{ height: "400px", width: "100%", borderRadius: "8px" }}
+          >
+            <TileLayer
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+            />
+            <Marker position={position}>
+              <Popup>
+                Ashbard Transportation <br /> We move your freight efficiently
+                and safely.
+              </Popup>
+            </Marker>
+          </MapContainer>
+        </div>
       </div>
       <div className="mx-8 rounded-lg bg-white p-8">
         <Typography variant="h4" className="mb-6 text-center text-gray-800">
           Send Us Message
         </Typography>
-        <form onSubmit={onSubmit}>
+        <form>
           <div className="mb-4 flex gap-4">
             <div className="w-1/2">
               <input
                 type="text"
-                name="fullName"
+                id="fullName"
                 placeholder="Full Name"
-                required
                 className="w-full rounded border p-3 text-gray-700 focus:outline-none focus:ring-2"
               />
             </div>
             <div className="w-1/2">
               <input
                 type="email"
-                name="email"
+                id="email"
                 placeholder="Email"
-                required
                 className="w-full rounded border p-3 text-gray-700 focus:outline-none focus:ring-2"
               />
             </div>
@@ -69,27 +56,24 @@ export default function MapAndSendUsRow() {
             <div className="w-1/2">
               <input
                 type="tel"
-                name="phone"
+                id="phone"
                 placeholder="Phone Number"
-                required
                 className="w-full rounded border p-3 text-gray-700 focus:outline-none focus:ring-2"
               />
             </div>
             <div className="w-1/2">
               <input
                 type="text"
-                name="subject"
+                id="subject"
                 placeholder="Subject"
-                required
                 className="w-full rounded border p-3 text-gray-700 focus:outline-none focus:ring-2"
               />
             </div>
           </div>
           <div className="mb-4">
             <textarea
-              name="message"
+              id="message"
               placeholder="Your Message"
-              required
               className="w-full rounded border p-3 text-gray-700 focus:outline-none focus:ring-2"
             />
           </div>
@@ -103,10 +87,9 @@ export default function MapAndSendUsRow() {
             </Button>
           </div>
         </form>
-        <div className="mt-4 text-center text-gray-700">
-          <span>{result}</span>
-        </div>
       </div>
     </div>
   );
-}
+};
+
+export default LiveMap;

@@ -4,6 +4,7 @@ import routes from "@/routes";
 import OilAndGas from "./pages/Home/OilAndGas";
 import Transportation from "./pages/Home/Transportation";
 import Consulting from "./pages/Home/Consulting";
+import "leaflet/dist/leaflet.css";
 
 function App() {
   const { pathname } = useLocation();

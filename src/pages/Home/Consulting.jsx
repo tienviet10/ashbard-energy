@@ -1,43 +1,44 @@
 import { Typography } from "@material-tailwind/react";
 import React from "react";
-import backgroundImageMobile from "/img/background-about-us-mobile.png";
-import backgroundImageDesktop from "/img/background-about-us.png";
-import OilAndGasServiceServices from "../Services/OilAndGasServiceServices";
+import backgroundImageMobile from "/img/consulting_bg.png";
+import backgroundImageDesktop from "/img/consulting_bg.png";
 import { Footer } from "@/widgets/layout";
 
 export const Consulting = () => {
   return (
-    <>
-      <div>
+    <div className="relative flex min-h-screen flex-col">
+      <div className="absolute inset-0 h-full w-full">
         <img
           src={backgroundImageMobile}
           alt="Background"
-          className="absolute inset-0 w-full object-cover"
+          className="h-full w-full object-cover sm:hidden"
         />
         <img
           src={backgroundImageDesktop}
           alt="Background"
-          className="absolute inset-0 hidden w-full sm:block"
+          className="hidden h-full w-full object-cover sm:block"
         />
       </div>
 
-      <section className="z-9 absolute mt-24 flex w-[100%] flex-col items-center justify-center bg-white">
+      <div className="relative flex flex-grow flex-col items-center justify-center text-white">
         <Typography
-          className="mb-6 mt-8 text-center text-4xl font-bold lg:mt-16 lg:text-7xl"
-          style={{ color: "#F6871F" }}
+          className=" mt-8 text-center text-4xl font-bold lg:mt-16 lg:text-7xl"
+          style={{ fontFamily: "Gilroy", fontWeight: "550" }}
         >
           Consulting
         </Typography>
-
-        <Typography className="mb-6 mt-24 h-[100vh] max-w-7xl text-3xl font-normal lg:text-4xl">
+        <Typography
+          className="mb-6 mt-14 max-w-7xl text-center text-3xl  lg:text-4xl"
+          style={{ fontFamily: "Gilroy" }}
+        >
           Coming Soon!
         </Typography>
+      </div>
 
-        <div className="w-[100%]" style={{ backgroundColor: "#2E294E" }}>
-          <Footer />
-        </div>
-      </section>
-    </>
+      <div className="relative" style={{ backgroundColor: "#2E294E" }}>
+        <Footer />
+      </div>
+    </div>
   );
 };
 
