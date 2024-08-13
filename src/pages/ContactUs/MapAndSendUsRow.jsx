@@ -8,7 +8,7 @@ export default function MapAndSendUsRow() {
     setResult("Sending....");
 
     const formData = new FormData(event.target);
-    formData.append("access_key", "75b3b646-cbae-4c5a-ab3a-c3da14fecca5");
+    formData.append("access_key", "process.env.WEB3_ACCESS_TOKEN");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
