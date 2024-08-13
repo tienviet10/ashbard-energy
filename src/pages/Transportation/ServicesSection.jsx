@@ -20,6 +20,7 @@ const services = [
     description:
       "We handle a diverse range of flatbed freight and our drivers are highly proficient in managing wide load transportation.",
   },
+  
 ];
 
 const ServicesSection = () => {
