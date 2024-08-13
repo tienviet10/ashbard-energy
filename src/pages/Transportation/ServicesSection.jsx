@@ -20,10 +20,26 @@ const services = [
     description:
       "We handle a diverse range of flatbed freight and our drivers are highly proficient in managing wide load transportation.",
   },
-<<<<<<< HEAD
-=======
+  {
+        imgURL: "/img/moving.jpg",
+        title: "Residential Moving Services",
+        description:
+          "We offer comprehensive residential moving solutions, ensuring your belongings are safely and efficiently transported to your new home. Our team handles every aspect of the move with care, making your transition as smooth as possible."
+      },
+      {
+        imgURL: "/img/officemoving.jpg",
+        title: "Office Moving Services",
+        description:
+          "Our office moving services are designed to minimize downtime and disruption. We manage everything from packing to setup, ensuring your business is up and running quickly in your new location."
+      },
+      {
+        imgURL: "/img/trucking.jpg",
+        title: "Delivery Partnership Services",
+        description:
+          "Partner with us for reliable and timely delivery services. We offer customized logistics solutions that align with your business needs, ensuring your products reach their destination safely and on schedule."
+      }
+    
   
->>>>>>> main
 ];
 
 const ServicesSection = () => {

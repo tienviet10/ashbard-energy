@@ -13,10 +13,7 @@ export * from "@/pages/Projects/Projects";
 export * from "@/pages/Events/Events";
 export * from "@/pages/Careers/Careers";
 export * from "@/pages/ContactUs/ContactUs";
-<<<<<<< HEAD
 // export * from "@/pages/Consulting/Consulting";
-=======
 export * from "@/pages/Home/Consulting";
 export * from "@/pages/Home/Transportation";
->>>>>>> main
 export * from "@/pages/Transportation/TransportationServices";
