@@ -1,4 +1,5 @@
 import React from "react";
+import { Button, Typography } from "@material-tailwind/react";
 
 export default function MapAndSendUsRow() {
   const [result, setResult] = React.useState("");
@@ -8,7 +9,7 @@ export default function MapAndSendUsRow() {
     setResult("Sending....");
 
     const formData = new FormData(event.target);
-    formData.append("access_key", "process.env.WEB3_ACCESS_TOKEN");
+    formData.append("access_key", import.meta.env.VITE_WEB3_ACCESS_TOKEN);
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -28,6 +29,7 @@ export default function MapAndSendUsRow() {
     } catch (error) {
       console.error("Error submitting the form", error);
       setResult("An error occurred while submitting the form.");
+      alert("An error occurred while submitting the form.")
     }
   };
 
