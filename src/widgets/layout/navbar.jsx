@@ -121,17 +121,17 @@ export function Navbar({ brandName, routes, action }) {
               Request a Quote
             </a>
           </Typography>
-          {/* <a
-            href="https://www.material-tailwind.com/blocks?ref=mtkr"
+          <a
+            href="https://ashbardenergy.com/"
             target="_blank"
           >
-            <Button variant="text" size="sm" color="white" fullWidth>
-              pro version
+            <Button variant="text" size="sm" color="white" fullWidth style={{fontFamily: "Gilroy", fontWeight: "300"}}>
+              ASHBARD ENERGY
             </Button>
           </a>
           {React.cloneElement(action, {
             className: "hidden lg:inline-block",
-          })} */}
+          })}
         </div>
         <IconButton
           variant="text"
